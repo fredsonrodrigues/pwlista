@@ -1,0 +1,13 @@
+{
+  "name": "Pwlista - gerenciador de listas",
+  "short_name": "Pwlista",
+  "lang": "pt-BR",
+  "start_url": "/index.html",
+  "display": "fullscreen",
+  "theme_color": "#209cee",
+  "icons": [
+    {
+      "src": "https://vignette.wikia.nocookie.net/lionheart-tactics/images/9/9a/Home.png"
+    }
+  ]
+}
