@@ -17,6 +17,7 @@
 
     <link rel="icon" href="assets/img/Home.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Pwlista - gerenciador de listas</title>
 </head>
 <body>
@@ -27,13 +28,8 @@
             <div class="container">
                 <div class="navbar-brand">
                     <a class="navbar-item">
-                        <img src="https://vignette.wikia.nocookie.net/lionheart-tactics/images/9/9a/Home.png" alt="Logo">
+                        <img src="assets/img/Home.png" alt="Logo">
                     </a>
-                    <span class="navbar-burger burger" data-target="navbarMenuHeroC">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </span>
                 </div>
             </div>
         </header>
@@ -42,42 +38,63 @@
     <!-- Hero content: will be in the middle -->
     <div class="hero-body">
         <div class="container has-text-centered">
-            <h1 class="title">
-                PWLista
-            </h1>
-            <h2 class="subtitle">
-                Com certeza!
-            </h2>
+            <div class="columns is-desktop is-centered">
+                <div class="column is-half">
+                    <div class="control">
+                        <textarea class="textarea is-focused" type="text" placeholder="Focused textarea"></textarea>
+                    </div>
+                    <a class="button is-large is-success" style="width: 100%">Adicionar</a>
+                </div>
+            </div>
+            <div class="columns is-desktop">
+                <div class="column">
+
+                            <div class="card">
+                                <div class="card-content">
+                                    <p class="title">
+                                        Anotações do dia 22/05 ...
+                                    </p>
+                                </div>
+                                <footer class="card-footer">
+                                    <p class="card-footer-item">
+                                        <span>
+                                            <a href="#">Apagar</a>
+                                        </span>
+                                    </p>
+                                    <p class="card-footer-item">
+                                        <span>
+                                            <a href="#">Editar</a>
+                                        </span>
+                                    </p>
+                                </footer>
+                            </div>
+                </div>
+                <div class="column">
+                            <div class="card">
+                                <div class="card-content">
+                                    <p class="title">
+                                         Anotações do dia 23/05 ...
+                                    </p>
+                                </div>
+                                <footer class="card-footer">
+                                    <p class="card-footer-item">
+                                        <span>
+                                            <a href="#">Apagar</a>
+                                        </span>
+                                    </p>
+                                    <p class="card-footer-item">
+                                        <span>
+                                            <a href="#">Editar</a>
+                                        </span>
+                                    </p>
+                                </footer>
+                            </div>
+                </div>
+                <div class="column">3</div>
+                <div class="column">4</div>
+            </div>
         </div>
     </div>
-
-    <!-- Hero footer: will stick at the bottom -->
-    <!-- <div class="hero-foot">
-        <nav class="tabs is-boxed is-fullwidth">
-            <div class="container">
-                <ul>
-                    <li class="is-active">
-                        <a>Overview</a>
-                    </li>
-                    <li>
-                        <a>Modifiers</a>
-                    </li>
-                    <li>
-                        <a>Grid</a>
-                    </li>
-                    <li>
-                        <a>Elements</a>
-                    </li>
-                    <li>
-                        <a>Components</a>
-                    </li>
-                    <li>
-                        <a>Layout</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div> -->
 </section>
 </body>
 </html>
