@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -20,81 +21,55 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Pwlista - gerenciador de listas</title>
 </head>
+
 <body>
-<section class="hero is-info is-fullheight">
-    <!-- Hero head: will stick at the top -->
-    <div class="hero-head">
-        <header class="navbar">
-            <div class="container">
-                <div class="navbar-brand">
-                    <a class="navbar-item">
-                        <img src="assets/img/Home.png" alt="Logo">
-                    </a>
-                </div>
-            </div>
-        </header>
-    </div>
+    <section class="hero is-info is-fullheight">
 
-    <!-- Hero content: will be in the middle -->
-    <div class="hero-body">
-        <div class="container has-text-centered">
-            <div class="columns is-desktop is-centered">
-                <div class="column is-half">
-                    <div class="control">
-                        <textarea class="textarea is-focused" type="text" placeholder="Focused textarea"></textarea>
+        <div class="hero-head">
+            <header class="navbar">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a class="navbar-item">
+                            <img src="assets/img/Home.png" alt="Logo">
+                        </a>
                     </div>
-                    <a class="button is-large is-success" style="width: 100%">Adicionar</a>
                 </div>
-            </div>
-            <div class="columns is-desktop">
-                <div class="column">
-
-                            <div class="card">
-                                <div class="card-content">
-                                    <p class="title">
-                                        Anotações do dia 22/05 ...
-                                    </p>
-                                </div>
-                                <footer class="card-footer">
-                                    <p class="card-footer-item">
-                                        <span>
-                                            <a href="#">Apagar</a>
-                                        </span>
-                                    </p>
-                                    <p class="card-footer-item">
-                                        <span>
-                                            <a href="#">Editar</a>
-                                        </span>
-                                    </p>
-                                </footer>
-                            </div>
+            </header>
+        </div>
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <div class="columns is-desktop is-centered">
+                    <div class="column is-half">
+                        <a class="button is-large is-success" onclick="openModal()" style="width: 100%">Adicionar nota</a>
+                    </div>
                 </div>
-                <div class="column">
-                            <div class="card">
-                                <div class="card-content">
-                                    <p class="title">
-                                         Anotações do dia 23/05 ...
-                                    </p>
-                                </div>
-                                <footer class="card-footer">
-                                    <p class="card-footer-item">
-                                        <span>
-                                            <a href="#">Apagar</a>
-                                        </span>
-                                    </p>
-                                    <p class="card-footer-item">
-                                        <span>
-                                            <a href="#">Editar</a>
-                                        </span>
-                                    </p>
-                                </footer>
-                            </div>
+                <div class="columns is-desktop" id="cardList">
+                    <!-- Itens serão adicionados dinamicamente -->
                 </div>
-                <div class="column">3</div>
-                <div class="column">4</div>
             </div>
         </div>
+    </section>
+    <div class="modal" id="modalMaster">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <form method="post" onsubmit="postItem()">
+            <header class="modal-card-head">
+                <input class="input is-large" type="text" name="titleItem" id="titleItem" placeholder="Título">
+            </header>
+            <section class="modal-card-body">
+                <div class="control">
+                    <textarea class="textarea is-focused" name="textItem" id="textItem" type="text" placeholder="Add texto"></textarea>
+                </div>
+            </section>
+            <footer class="modal-card-foot">
+                <button type="submit" class="button is-success">Save changes</button>
+                <button class="button" onclick="closeModal()">Cancel</button>
+            </footer>
+            </form>
+        </div>
     </div>
-</section>
 </body>
+<script src="assets/js/pouchdb-7.0.0.min.js"></script>
+<script src="assets/js/modal.js"></script>
+<script src="assets/js/notes.js"></script>
 </html>
