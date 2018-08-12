@@ -52,7 +52,7 @@
     <div class="modal" id="modalMaster">
         <div class="modal-background"></div>
         <div class="modal-card">
-            <form method="post" onsubmit="postItem()">
+            <form method="post" onsubmit="postItem(event)">
             <header class="modal-card-head">
                 <input class="input is-large" type="text" name="titleItem" id="titleItem" placeholder="Título">
             </header>
@@ -69,7 +69,7 @@
         </div>
     </div>
 </body>
-<script src="assets/js/pouchdb-7.0.0.min.js"></script>
+<script src="assets/js/pouchdb.min.js"></script>
 <script src="assets/js/modal.js"></script>
 <script src="assets/js/notes.js"></script>
 </html>
