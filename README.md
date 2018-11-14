@@ -1,6 +1,6 @@
-# Pwlista 
+﻿# Pwlista 
 
-Pwlista é um projeto desenvolvido para estudo em tecnologias de Progressive Web Applications. 
+Pwlista é um projeto desenvolvido para estudo em tecnologias de Progressive Web Applications. Foi desenvolvida para servir de modelo e guia para ensino dessa nova tecnologia.
 
 ## Conceito:
 
